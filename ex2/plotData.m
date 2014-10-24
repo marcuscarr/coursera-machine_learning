@@ -13,10 +13,8 @@ figure; hold on;
 %
 
 
-
-
-
-
+plot(X(y==0,1), X(y==0,2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
+plot(X(y==1,1), X(y==1,2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
 
 
 
