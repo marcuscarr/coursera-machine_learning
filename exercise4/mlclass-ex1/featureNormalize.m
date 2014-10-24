@@ -26,7 +26,10 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
-
+mu = mean(X);
+sigma = std(X);
+X_shift = bsxfun(@minus, X, mu);
+X_norm = bsxfun(@rdivide, X_shift, sigma);
 
 
 
